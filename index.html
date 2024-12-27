@@ -1,0 +1,125 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of Campus</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="write.html">Write Karuthu</a></li>
+                <li><a href="search.html">Search Thagaval</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Echoes of Campus</h1>
+            <p>A platform to share and discover valuable insights and feedback from students, faculty, workers, and the public.</p>
+            <div class="options">
+                <a href="write.html" class="button">Write Karuthu</a>
+                <a href="search.html" class="button">Search Thagaval</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Echoes of Campus. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!-- write.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Karuthu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="write.html">Write Karuthu</a></li>
+                <li><a href="search.html">Search Thagaval</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="write-karuthu">
+            <h2>Write Karuthu</h2>
+            <form id="review-form" action="/submit" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="designation">Designation:</label>
+                <select id="designation" name="designation" required>
+                    <option value="student">Student</option>
+                    <option value="faculty">Faculty</option>
+                    <option value="worker">Worker</option>
+                    <option value="public">Public</option>
+                </select>
+
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Echoes of Campus. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!-- search.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Thagaval</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="write.html">Write Karuthu</a></li>
+                <li><a href="search.html">Search Thagaval</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-thagaval">
+            <h2>Search Thagaval</h2>
+            <input type="text" id="search-box" placeholder="Search reviews...">
+            <div id="suggestions"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Echoes of Campus. All rights reserved.</p>
+    </footer>
+</body>
+</html>
